@@ -21,13 +21,10 @@ const questions = [
     }
 ]
 
-
-//function to write the readME file using the user input
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// write the function int intitialize the aplpication
 function init() {
     inquirer.prompt(questions).then(inquirerResponses); => {
         console.log("generating your readME");
