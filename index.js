@@ -1,8 +1,41 @@
 const inquirer = require("inquirer");
-const path = require()
+const fs = require("fs")
+const path = require("path")
+const generateMarkdown = require("./generatedMarkdown");
+const { type } = require("os");
 
 
 const questions = [
+    {
+        type: "input",
+        name: "title",
+        message: "What is your project title?"
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Enter project description: "
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "Enter project installation instructions: "
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Enter project usage information: "
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "Enter project contribution guidelines: "
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "Enter project test instructions: "
+    },
     {
         type: "input",
         name: "github",
