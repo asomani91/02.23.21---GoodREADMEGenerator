@@ -1,8 +1,22 @@
-// create a function that returns a license badge based on user pick of licesne if none return something
 
-// create a function that returns the license link based on user pick of none return something
 
-// create a function that returns the license section of the readMe if there none return something
+module.exports = function generateMarkdown(data) {
+    return`
+# ${data.title}
+
+![${data.licesne}](https://img.shields.io/badge/license-${data.licesne}-green)
+
+## Description
+${data.description}
+
+## Table of Contents
+- [Installation](#installation)
+
+    `
+
+}
+
+
 
 function generateMarkdown(data) {
     return`

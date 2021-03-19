@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs")
 const path = require("path")
 const generateMarkdown = require("./generatedMarkdown");
-const { type } = require("os");
 
 
 const questions = [
@@ -59,10 +58,10 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
-    inquirer.prompt(questions).then(inquirerResponses); => {
+    inquirer.prompt(questions).then(inquirerResponses => {
         console.log("generating your readME");
         writeToFile("READ.md", generateMarkdown({ ...inquirerResponses }))
-    }
+    })
 }
 
 init();
