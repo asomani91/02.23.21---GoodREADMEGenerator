@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/asomani91/02.23.21---GoodREADMEGenerator/issues"
   },
-  "homepage": "https://github.com/asomani91/02.23.21---GoodREADMEGenerator#readme"
+  "homepage": "https://github.com/asomani91/02.23.21---GoodREADMEGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
