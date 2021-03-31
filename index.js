@@ -47,8 +47,8 @@ const questions = [
     },
     {
         type: "list",
-        name: "licesne",
-        message: "What kind of licesne is your project using?",
+        name: "license",
+        message: "What kind of license is your project using?",
         choices: ["MIT", "APACHE", "NONE"],
     }
 ]

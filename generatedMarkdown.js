@@ -3,8 +3,6 @@ module.exports = function generateMarkdown(data) {
     return`
 # ${data.title}
 
-![${data.licesne}](https://img.shields.io/badge/license-${data.licesne}-green)
-
 ## Description
 ${data.description}
 
@@ -12,6 +10,7 @@ ${data.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution Guidelines](#contribution)
+- [License](#license)
 - [Test Instructions](#testinstructions)
 - [Questions](#questions)
 
@@ -24,6 +23,9 @@ ${data.usage}
 ## Contribution Guidelines
 ${data.contribution}
 
+## License
+![${data.license}](https://img.shields.io/badge/License-${data.license}-blue.svg)
+
 ## Test Instructions
 ${data.test}
 
@@ -33,19 +35,3 @@ ${data.test}
 You can email me for further inquiries: ${data.email}
     `
 }
-
-// function generateMarkdown(data) {
-//     return`
-//     ##Description
-//     ${data.description}
-
-//     ##GitHub User
-//     ${data.GitHub}
-
-//     ##GitHub Email
-//     ${data.userEmail}
-
-//     ##User License
-//     ${data.licesne}    
-//     `
-// }
