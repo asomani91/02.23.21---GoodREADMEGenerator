@@ -6,6 +6,8 @@ LINKS
 
 https://github.com/asomani91/02.23.21---GoodREADMEGenerator
 
+![GIF](https://github.com/asomani91/02.23.21---GoodREADMEGenerator/blob/main/Good%20README.gif)
+
 -----
 
 Welcome to my Good README Generator! This is a simple coding format to create a README file for your project!
